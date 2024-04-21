@@ -9,5 +9,23 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    // const currentDate = new Date();
+    // beforeTime = currentDate.getTime()
+    // for (let i = 0; i <= n; i++){
+    //     let sum = sum + i
+    // }
+    // console.log(sum)
+    // afterTime = currentDate.getTime()
+    // console.log("Time taken to run this code = ", (afterTime-beforeTime))
+
+
+    const beforeTime = new Date().getTime();
+    let sum = 0
+    for (let i = 0; i <= n; i++){
+        sum = sum + i
+    }
+    const afterTime = new Date().getTime();
+    console.log("Time taken to run this code = ", ((afterTime-beforeTime)/1000))
 }
+
+calculateTime(100)
